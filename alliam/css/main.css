@@ -752,15 +752,20 @@
     position: relative;
   }
 
-  .how-item:nth-child(4) .how-item-left {
-    padding-top: 30px;
-  }
-
   .how-item-left {
     width: 100%;
     border-radius: 25px 25px 0 0;
     padding: 15px 15px 10px 15px;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 70px;
     text-align: start;
   }
 
@@ -770,8 +775,10 @@
 
   .how-item-right h3 {
     position: absolute;
-    top: 20px;
-    left: 60px;
+    top: 28px;
+    font-size: 16px;
+    left: 55px;
+    min-height: 38px;
   }
 
   .spec-wrap-item-links a {
@@ -786,6 +793,10 @@
   .footer::after {
     height: 140px;
     width: 150px;
+  }
+
+  .how-item-right {
+    padding-right: 10px;
   }
 
   .answer-item h3 {
@@ -847,6 +858,11 @@
 }
 
 @media (max-width: 370px) {
+  .how-item-right h3 {
+    top: 32px;
+    font-size: 13px;
+  }
+
   .features-item-right {
     padding-top: 10px;
   }
