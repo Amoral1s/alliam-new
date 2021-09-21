@@ -119,6 +119,29 @@ jQuery(document).ready(function ($) {
     } 
   });
 
+
+  if (window.screen.width >= 992) {
+    const costItem = document.querySelectorAll('.cost-left-item');
+    const costTab = document.querySelectorAll('.cost-right-item');
+
+    if (costItem.length > 0) {
+      costItem.forEach((e, i) => {
+        e.addEventListener('click', () => {
+          costItem.forEach((e, i) => {
+            e.classList.remove('cost-left-item-active');
+            costTab[i].style.display = 'none';
+          });
+          costTab[i].style.display = 'block';
+          e.classList.add('cost-left-item-active');
+        });
+      });
+    }
+  } else {
+    $('.cost-mobile-item-title').on('click', function() {
+      $(this).next().slideToggle(200);
+    })
+  }
+
   
 });
 
