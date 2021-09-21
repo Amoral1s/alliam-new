@@ -38,7 +38,7 @@
   margin-bottom: 30px;
 }
 
-.spec-wrap-page-item a {
+.spec-wrap-page-item span {
   color: #2A6DE6;
   font-size: 17px;
 }
@@ -62,6 +62,8 @@
 
 .spec-wrap-page-item h3 img {
   margin-right: 13px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .spec-wrap-item {
