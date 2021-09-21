@@ -746,6 +746,10 @@
   color: #2A6DE6;
 }
 
+.answer-page .answer-ask .button:hover {
+  color: #fff;
+}
+
 .consult-white {
   background: -o-linear-gradient(326.81deg, #FAFDFF 1.4%, #EDF7FE 106.46%);
   background: linear-gradient(123.19deg, #FAFDFF 1.4%, #EDF7FE 106.46%);
