@@ -166,6 +166,7 @@ h5 {
 }
 
 input[type=checkbox] {
+  border-radius: 5px;
   height: 18px;
   width: 18px;
   background-color: #fff;
@@ -174,14 +175,15 @@ input[type=checkbox] {
   cursor: pointer;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border: 1px solid #2A6DE6;
 }
 
 input[type=checkbox]:checked::after {
   position: absolute;
   content: "";
-  height: 14px;
-  width: 14px;
-  top: 50%;
+  height: 12px;
+  width: 12px;
+  top: 52%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -288,7 +290,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 100px;
   width: 820px;
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 main.container {
@@ -628,7 +630,7 @@ main.container {
 
 section {
   padding: 50px 20px 30px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border-radius: 30px;
 }
 
